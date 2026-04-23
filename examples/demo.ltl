@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_fir_filter
+
+import std::io
+use ltl_fir_filter as lib
+
+fn main() {
+    io::println("ltl_fir_filter demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
